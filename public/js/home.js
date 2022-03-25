@@ -2,7 +2,7 @@ $(document).ready(function(){
   console.log('Ready');
 
   $("form").submit(function(event) {
-    var data = new FormData($(this)[0]);
+    let data = new FormData($(this)[0]);
 
     $.ajax({
       url: '/fileupload',
